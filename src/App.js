@@ -8,6 +8,7 @@ import LayoutDefault from './layout/LayoutDefault/LayoutDefault';
 import Blog from './pages/Blog/Blog';
 import BlogNews from './pages/Blog/BlogNews';
 import BlogRelated from './pages/Blog/BlogRelated';
+import BlogAll from './pages/Blog/BlogAll';
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
           <Route path='about' element={<About />} />
           <Route path='contact' element={<Contact />} />
           <Route path='blog' element={<Blog />}>
+            <Route index element={<BlogAll />} />
             <Route path='news' element={<BlogNews />} />
             <Route path='related' element={<BlogRelated />} />
           </Route>
