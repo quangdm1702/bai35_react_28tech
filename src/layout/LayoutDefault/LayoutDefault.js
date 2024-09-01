@@ -19,11 +19,23 @@ function LayoutDefault() {
               </li>
 
               <li>
-                <NavLink to="about" className={navLinkActive}>About</NavLink>
+                <NavLink to="/about" className={navLinkActive}>About</NavLink>
               </li>
 
               <li>
-                <NavLink to="contact" className={navLinkActive}>Contact</NavLink>
+                <NavLink to="/contact" className={navLinkActive}>Contact</NavLink>
+              </li>
+
+              <li>
+                <NavLink to="/blog" className={navLinkActive}>Blog</NavLink>
+                <ul className='menu__sub'>
+                  <li>
+                    <NavLink to="/blog/news" className={navLinkActive}>Blog News</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/blog/related" className={navLinkActive}>Blog Related</NavLink>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>

@@ -27,6 +27,7 @@
 
     li {
       margin-left: 20px;
+      position: relative;
     }
   }
 
@@ -37,5 +38,28 @@
     &--active {
       color: #fff;
     }
+  }
+
+  &__sub {
+    position: absolute;
+    top: 100%;
+    background-color: orangered;
+    right: 0;
+    display: none !important;
+    flex-direction: column;
+
+    li {
+      margin-left: 0 !important;
+    }
+
+    a {
+      white-space: nowrap;
+      display: block;
+      padding: 4px 10px;
+    }
+  }
+
+  li:hover>&__sub {
+    display: flex !important;
   }
 }
